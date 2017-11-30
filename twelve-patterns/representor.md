@@ -1,6 +1,6 @@
 ## Representor
 
-_You SHOULD implement a message translator (Hohpe) to convert internal models into public messages._
+_You SHOULD implement a message translator[1] to convert internal models into public messages._
 
 ### Server-Side Example
 
@@ -38,3 +38,5 @@ function representor(object, mimeType, root) {
   return doc;
 }
 ```
+
+[1] [http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageTranslator.html](Message Translator)
