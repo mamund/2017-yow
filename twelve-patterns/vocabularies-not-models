@@ -1,0 +1,12 @@
+## Share Vocabularies, not Data Models
+
+_All messages SHOULD rely only on standardized identifiers (for data/action) based on shared vocabularies. For example:_
+
+ * IANA Link Relation Values
+ * Schema.org
+ * Microformats
+ * Dublin Core
+ * Activity Streams
+ * Industry-specific dictionairies, etc.
+ 
+ 
