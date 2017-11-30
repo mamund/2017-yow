@@ -6,5 +6,16 @@ _Services SHOULD accept partially filled-in FORM and return a new FORM with the 
 
 ```javascript
 // partial submit processing
+...
+case "POST":
+  neededInputs = processForm(suppliedInputs);
+  if(neededInputs.length>0) {
+    responseBody = generateForm(neededInputs);
+  }
+  else {
+    responseBody = generateResults();
+  }
+  break
+...
 
 ```
