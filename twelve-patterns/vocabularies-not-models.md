@@ -13,7 +13,7 @@ _All messages SHOULD rely only on standardized identifiers (for data/action) bas
 Note the only thing shared by both client and server is the _vocabulary_ information. 
 Each participant is free to arrange the contents of messages into their own internal object and/or storage model.
 
-#### Shared PUublic Vocabulary
+#### Shared Public Vocabulary
 * Name
 * Address
 * Size
