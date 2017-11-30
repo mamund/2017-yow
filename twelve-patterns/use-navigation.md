@@ -8,31 +8,31 @@ _Services SHOULD provide `next` and `previous` LINK elements to handle multi-ste
 // evaulate options
 var lookingFor = "next";
 var msg = getCurrentResponseBody();
-switch (msg) {
-  case msg.findNavigation("done"):
-    if(lookingFor==="done") {
+switch (lookingFor) {
+  case "done":
+    if(msg.findNavigation(lookingFor)) {
       processDone(msg);
-      break;
     }
-  case msg.findNavigation("cancel"):
-    if(lookingFor==="cancel" {
+    break;
+  case "cancel":
+    if(msg.findNavigation(lookingFor)) {
       processCancel(msg);
-      break;
     }
-  case msg.findNavigation("restart"):
-    if(lookingFor==="restart") {
+    break;
+  case "restart":
+    if(msg.findNavigation("restart")) {
       processRestart(msg);
-      break;
     }
-  case msg.findNavigation("previous"):
-    if(lookingFor==="previous") {
+    break;
+  case "previous":
+    if(msg.findNavigation("previous")) {
       processPrevious(msg);
-      break;
     }
-  case msg.findNavigation("next"):
-    if(lookingFor==="next") {
+    break;
+  case "next":
+    if(msg.findNavigation("next")) {
       processNext(msg);
-      break;
     }
+    break;
 }
 ```
