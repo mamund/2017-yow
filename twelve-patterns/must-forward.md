@@ -6,9 +6,9 @@ _Clients MUST forward (unchanged) any input fields (URL or FORM) that the client
 
 ```HTML
 <ul class="user">
-  <input type="text" name="familyName" value="Markov" />
-  <input type="text" name="givenName" value="Shayne" />
-  <input type="text" name="checksum" value="1qw2t3e5rt4u5" />
+  <li class="familyName">Markov</li>
+  <li class="givenName">Shayne</li>
+  <li class="checksum">1qw2t3e5rt4u5</li>
 </ul>
 
 <script>
