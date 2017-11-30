@@ -10,7 +10,7 @@ _Services SHOULD accept partially filled-in FORM and return a new FORM with the 
 case "POST":
   neededInputs = processForm(suppliedInputs);
   if(neededInputs.length>0) {
-    responseBody = generateForm(neededInputs);
+    responseBody = generateForm(neededInputs, actions["done","cancel","restart","previous"]);
   }
   else {
     responseBody = generateResults();
