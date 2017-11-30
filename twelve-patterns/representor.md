@@ -1,6 +1,6 @@
 ## Representor
 
-
+_You SHOULD implement a message translator (Hohpe) to convert internal models into public messages._
 
 ### Server-Side Example
 
