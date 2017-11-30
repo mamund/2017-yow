@@ -6,19 +6,32 @@ _Services SHOULD provide `next` and `previous` LINK elements to handle multi-ste
 
 ```javascript
 // evaulate options
-var localState = "";
+var lookingFor = "next";
 var msg = getCurrentResponseBody();
-var state = "next";
 switch (msg) {
   case msg.findNavigation("done"):
-    localState = "done";
-    break;
-  case msg.findNavigation("cancel"):
-    if(localState==="cancel" {
+    if(lookingFor==="done") {
+      processDone(msg);
       break;
-    ]
-  case "msg.findNavigation("retart"):
-    if(localState==="restart") {
+    }
+  case msg.findNavigation("cancel"):
+    if(lookingFor==="cancel" {
+      processCancel(msg);
+      break;
+    }
+  case msg.findNavigation("restart"):
+    if(lookingFor==="restart") {
+      processRestart(msg);
+      break;
+    }
+  case msg.findNavigation("previous"):
+    if(lookingFor==="previous") {
+      processPrevious(msg);
+      break;
+    }
+  case msg.findNavigation("next"):
+    if(lookingFor==="next") {
+      processNext(msg);
       break;
     }
 }
