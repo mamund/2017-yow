@@ -39,4 +39,4 @@ function representor(object, mimeType, root) {
 }
 ```
 
-[1] http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageTranslator.html ](Message Translator)
+[1] http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageTranslator.html
