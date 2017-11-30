@@ -16,11 +16,18 @@ Instead, message bodies SHOULD be sent using a highly-structured metadata-rich f
  
  var responseObject = {};
  var messageBody = "";
- responseObject.customerSummary = dataStore.getCustomerSummary(custId);
- responseObject.outstandingInvoices = dataStore.getInvoices(custId,status="outstanding");
- responseObject.shippingStatus = dataStore.getOrdersInTransit(custId);
+ responseObject.customerSummary = 
+  dataStore.getCustomerSummary(custId);
+ responseObject.outstandingInvoices = 
+  dataStore.getInvoices(custId,status="outstanding");
+ responseObject.shippingStatus = 
+  dataStore.getOrdersInTransit(custId);
  
- messageBody = messageTranslator(responseObject,"application/HTML");
+ messageBody = messageTranslator(
+  responseObject,
+  "application/HTML"
+ );
+
  HTTP.Send(messageBody);
  
  ```
