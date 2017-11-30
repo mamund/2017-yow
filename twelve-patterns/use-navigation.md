@@ -34,5 +34,8 @@ switch (lookingFor) {
       processNext(msg);
     }
     break;
+  default: // give up
+    lookingFor = "cancel";
+    break;
 }
 ```
